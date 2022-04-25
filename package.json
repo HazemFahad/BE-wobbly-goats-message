@@ -1,0 +1,25 @@
+{
+  "name": "be-wobbly-goats-message",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squarezy/BE-wobbly-goats-message.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/squarezy/BE-wobbly-goats-message/issues"
+  },
+  "homepage": "https://github.com/squarezy/BE-wobbly-goats-message#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.5.0"
+  }
+}
