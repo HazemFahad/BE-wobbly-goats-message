@@ -5,7 +5,7 @@ const cors = require("cors");
 const { getRooms, getRoomById } = require("./rooms");
 const { getUsers, joinUser, getUserById, logoutUser } = require("./user");
 
-app.use(express());
+app.use(express.json());
 app.use(cors());
 
 
