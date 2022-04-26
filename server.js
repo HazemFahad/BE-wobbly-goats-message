@@ -52,7 +52,7 @@ io.on("connection", (socket) => {
     const user = getUserById(socket.id);
     if (typeof(user.room_id)!== 'undefined') {
       io.to(user.room_id).emit("message", {
-        user_id: user.id,
+        user_id: user.user_id,
         username: user.username,
         text: text,
       });
