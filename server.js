@@ -9,7 +9,7 @@ app.use(express());
 app.use(cors());
 
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 
 app.get("/rooms", (req, res) => {
@@ -30,7 +30,7 @@ const io = socket(server);
 
 io.on("connection", (socket) => {
 
-  
+
   socket.on("join", ({ username, room_id }) => {
     const user = joinUser(socket.id, username, room_id);
     const room = getRoomById(room_id);
