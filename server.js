@@ -14,12 +14,12 @@ const port = process.env.PORT || 8000;
 
 app.get("/rooms", (req, res) => {
   const rooms = getRooms();
-  res.status(200).send(JSON.stringify({ rooms }));
+  res.status(200).send({ rooms });
 });
 
 app.get("/users", (req, res) => {
   const users = getUsers();
-  res.status(200).send(JSON.stringify({ users }));
+  res.status(200).send({ users });
 });
 
 var server = app.listen(port, () => {
